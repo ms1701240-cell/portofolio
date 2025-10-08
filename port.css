@@ -1,0 +1,186 @@
+.background{
+    background: linear-gradient(rgba(80, 71, 71, 0.4)),url('img/ales-nesetril-Im7lZjxeLhg-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100dvh;
+}
+.color{
+    color: rgb(199, 9, 9);}
+    .m{
+        margin-bottom: 200px;
+    }
+
+.img{
+    object-fit: cover;
+    width: 100px;
+    height:100px;
+    position: absolute;
+    z-index: 1;
+}
+.triangle{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    clip-path: polygon(0 100%, 0 0, 100% 0);
+    background: red;
+}
+.lines{
+    position: relative;
+}
+
+.lines .l{
+    border-bottom: 1px solid red;
+    width: 100px;
+    margin: auto;
+}
+.l::after{
+    content: '';
+  border-bottom: 1px solid red;
+    width: 200px;
+    display: block;
+    position: relative;
+    top: 15px;
+   right: 53px;
+}
+span{
+    border-bottom: 1px solid red;
+    display: block;
+    position: relative;
+    top: 30px;
+}
+article{
+   min-height: 70dvh;
+}
+.serv p{
+    border-bottom: 1px solid red;
+    width: 100px;
+    margin: auto;
+}
+.serv p::after{
+    content: '';
+    border-bottom: 1px solid red;
+    display: block;
+    position: relative;
+    top: 30px;
+    
+}
+.art{
+    margin-top: 250px;
+}
+.serv .span2{
+    border-bottom: 1px solid red;
+    display: block;
+    position: relative;
+    top: 15px;
+    width: 200px;
+    margin: auto;
+}
+.Skills{
+    background: linear-gradient(rgba(15, 15, 15, 0.733)),url(img/skill-knowledge-ability-business-internet-technology-concept-122402762.webp);
+    min-height: 100dvh;
+    background-size: cover;
+    background-position: center;
+    margin-top: 60px;
+}
+.mp{
+    margin-top: 100px;
+}
+.skill{
+    color: chartreuse;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.skill::after{
+    content: '';
+    border-bottom: 2px solid yellowgreen;
+    display: block;
+    position: relative;
+    top:10px;
+    width: 100px;
+    margin: auto;
+}
+.skill::before{
+content: '';
+border-bottom: 2px solid yellowgreen;
+display: block;
+position: relative;
+top:60px;
+width: 50px;
+margin: auto;
+}
+.margskill{
+    margin-top: 150px;
+}
+footer{
+    background-color: rgba(121, 118, 115, 0.719);
+    min-height: 50dvh;
+    min-width: 50dvh;
+}
+.rows .line1cont{
+     border-bottom: 2px solid red;
+     width: 100px;
+     margin: auto;
+     display: block;
+}
+.rows .line1cont::after{
+    content: '';
+    border-bottom: 2px solid red;
+    width: 200px;
+    margin: auto;
+    display: block;
+    position: relative;
+    top:15px;
+    right: 60px;
+}
+.rows .line1cont::before{
+    content: '';
+    border-bottom: 2px solid red;
+    display: block;
+    position: relative;
+    bottom: 6px;
+    width: 50px;
+    margin: auto;
+}
+.margcont{
+    margin-top: 100px;
+}
+.gaps{
+    gap: 55px;
+}
+.loader, .loader:before {
+	display: inline-block;
+	border: 20px double transparent;
+	border-top-color: #fff;
+	border-radius: 50%;
+  box-sizing: border-box;
+}
+.loader {
+	padding: 8px;
+  animation: wifiLoading 1s ease-in infinite;
+}
+.loader:before {
+	content: '';
+	width: 0; height: 0;
+}
+@keyframes wifiLoading {
+  0% { border-style: none}
+  100% { border-style: double}
+}
+#load{
+ position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+nav {
+  z-index: 3;
+  transition: top 0.4s ease-in-out;
+}
+
