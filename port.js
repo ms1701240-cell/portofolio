@@ -22,7 +22,7 @@ const l=()=>{
   loader.classList.add('d-none')
 }
 
-setTimeout(l,3000);
+setTimeout(l,5000);
 
 
 
@@ -58,3 +58,4 @@ if(ismove){
 }
 
     ,150)
+
