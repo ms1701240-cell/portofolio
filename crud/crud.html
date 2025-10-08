@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/all.min.css"/>
+    <link rel="stylesheet" href="../css/crudcs.css"/>
+    <title>Document</title>
+</head>
+<body>
+    
+ <div class="container bg-danger my-5 p-4 fill">
+    <h1 class="text-center text-primary fs-1 bg-dark text-uppercase  ">Tecno Devices</h1>
+    <div class="alert alert-danger d-none" role="alert">
+  <h4 class="alert-heading">please fill</h4>
+  <p></p>
+  <hr>
+  <p class="mb-0"></p>
+</div>
+    <div class="row">
+     
+        <div class="col-12 text-start text-dark" id="nameConatainer">
+            <lable class=" fs-4 text-primary-emphasis">Device Name:<i class="fa-solid fa-laptop"></i> <i class="fa-solid fa-computer"></i> <i class="fa-solid fa-keyboard"></i> <i class="fa-solid fa-computer-mouse"></i><i class="fa-solid fa-gamepad"></i> <i class="fa-solid fa-inbox"></i> </lable>
+            <input type="text" placeholder="Name Device" class="form-control " id="DeviceName" oninput="validationname()"/>
+            <div class="alert alert-danger d-none" role="alert" id="alertname" >
+            please enter divce ex:computer,laptop,harddisks,rams,playstations,keyboard,mouse
+            </div>
+        </div>
+        <div class="col-2 " >
+            <label class=" fs-4 text-primary-emphasis" >Price:<i class="fa-solid fa-dollar-sign text-primary-emphasis"></i></label>
+            <input type="number" placeholder="$"class="form-control " id="DevicePrice"  onkeyup=" gettotal()" />
+            <div class="alert alert-danger  d-none" role="alert" id="alertprice" >
+             enter price min:100 max:90000
+            </div>
+        </div>
+         <div class="col-2 mx-3 " >
+            <label class=" fs-4 text-primary-emphasis" >Taxs:<i class="fa-solid fa-dollar-sign text-primary-emphasis"></i></label>
+            <input type="number" placeholder="$"class="form-control " id="Devicetaxs"onkeyup=" gettotal()" />
+            <div class="alert alert-danger  d-none" role="alert" id="alertprice" >
+             enter price min:100 max:90000
+            </div>
+        </div>
+         <div class="col-2 mx-3" >
+            <label class=" fs-4 text-primary-emphasis" >Ads:<i class="fa-solid fa-dollar-sign text-primary-emphasis"></i></label>
+            <input type="number" placeholder="$"class="form-control  " id="Deviceads"  onkeyup=" gettotal()"/>
+            <div class="alert alert-danger  d-none" role="alert" id="alertprice" >
+             enter price min:100 max:90000
+            </div>
+        </div>
+         <div class="col-2 mx-3 " >
+            <label class=" fs-4 text-primary-emphasis" >Descound:<i class="fa-solid fa-dollar-sign text-primary-emphasis"></i></label>
+            <input type="number" placeholder="$"class="form-control " id="Devicedescound"  onkeyup=" gettotal()"/>
+            <div class="alert alert-danger  d-none" role="alert" id="alertprice" >
+             enter price min:100 max:90000
+            </div>
+        </div>
+        <div class="col-2 pos " >
+          <div class="total" id="Devicetotal"></div>
+        </div>
+
+         <div class="col-12 ">
+            <label class=" fs-4 text-primary-emphasis" >Type:</label>
+            <input type="text" placeholder="Type"class="form-control " id="DeviceType" oninput="validationtype()"   />
+            <div class="alert alert-danger  d-none" role="alert" id="alerttype" >
+             enter type divice
+            </div>
+        </div>
+         <div class="col-12  " >
+            <label class=" fs-4 text-primary-emphasis " >Model:</label>
+            <input type="text" placeholder="Model"class="form-control " id="DeviceModel"oninput="validationmodel()"   />
+            <div class="alert alert-danger  d-none" role="alert" id="alertmodel" >
+            enter model sence
+            </div>
+        </div>
+         <div class="col-12 my-3 d-flex justify-content-center">
+            <button type="button" class="btn btn-dark w-50 text-primary fs-5 " id="add" onclick="adddivces()" >Add Product</button>
+            <button type="button" class="btn btn-dark w-50 text-primary fs-5  d-none" id="update" onclick="updatedvices()" >updateproduct</button>
+        </div>
+        <div class="col-12 d-flex justify-content-center ">
+          <input type="search" placeholder="search" id="search" oninput="search()" class="form-control w-75"/>
+        </div>
+             <table class="table my-5 table-hover table-primary " >
+  <thead class="table-dark">
+    <tr>
+      <th class="text-info" scope="col">#</th>
+      <th scope="col"><i class="fa-solid fa-laptop text-danger"></i> <i class="fa-solid fa-computer text-danger "></i> <i class="fa-solid fa-keyboard text-danger "></i> <i class="fa-solid fa-computer-mouse text-danger "></i><i class="fa-solid fa-gamepad text-danger"></i> <i class="fa-solid fa-inbox text-danger "></i></th>
+      <th scope="col"><i class="fa-solid fa-dollar-sign text-warning"></i></th>
+      <th class="text-primary" scope="col">Model</th>
+      <th class="text-success" scope="col">Type</th>
+        <th class="text-success" scope="col">descound</th>
+        <th class="text-success" scope="col">Ads</th>
+        <th class="text-success" scope="col">Total</th>
+       <th class="text-success" scope="col">TAXS</th>
+      <th class="text-secondary"  scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody id="tablebody">
+    <tr>
+      
+    </tr>
+  </tbody>
+</table>
+
+
+    </div>
+    
+
+
+
+ </div>
+
+
+   
+    <script src="../crud/crudjava.js"></script>
+     <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
