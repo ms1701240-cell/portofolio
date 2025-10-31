@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="crud.css">
+    <title>Document</title>
+</head>
+<body>
+    
+<div class="crud">
+    <div class="container mt-5">
+        <div class="row g-3">
+            <div class="col-12">
+               <select class="form-control dropdown-toggle" id="title">
+                <option value="" > اختر المنتج</option>
+               </select>
+            </div>
+             <div class="col-6">
+                <input type="number" class="form-control  " placeholder="price" id="price">
+            </div>
+             <div class="col-6">
+                <input type="number" class="form-control " placeholder="taxes" id="taxes">
+            </div>
+             <div class="col-6">
+                <input type="number" class="form-control " placeholder="ads" id="ads">
+            </div>
+             <div class="col-6">
+                <input type="number" class="form-control " placeholder="discount" id="discount">
+            </div>
+             <div class="col">
+                 <span class="badge bg-danger fs-4 " id="badgetotal">total:</span>
+            </div>
+            <div class="col-12">
+                <input type="number" class="form-control" id="count" placeholder="count">
+            </div>
+            <div class="col-12">
+                <input type="search" class="form-control" id="category" placeholder="category">
+            </div>
+            <div class="col-12">
+                <button type="button" class="btn btn-dark w-100" id="btncreate">Create</button>
+                <button type="button" class="btn btn-dark w-100 d-none" id="btneditss">Edite</button>
+            </div>
+             <div class="col-12">
+                <input type="search" class="form-control" id="inputsearch" placeholder="search">
+            </div>
+             <div class="col-6">
+               <button type="button" class="btn btn-dark w-75 " id="btnsearchtitle">Search title</button>
+            </div>
+            <div class="col-6 ">
+               <button type="button" class="btn btn-dark w-75 mx-5 " id="btnsearchcategory" >Search category</button>
+            </div>
+            <div class="col-12">
+               <button type="button" class="btn btn-dark w-100 " id="btnDelete" >DelleteALL</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="tablecrud ">
+    <div class="container">
+        <div class="row table-responsive">
+            <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Title</th>
+      <th scope="col">Price</th>
+      <th scope="col">Taxes</th>
+      <th scope="col">Ads</th>
+      <th scope="col">Discount</th>
+      <th scope="col">Total</th>
+      <th scope="col">Count</th>
+      <th scope="col">Category</th>
+    </tr>
+  </thead>
+  <tbody id="tablebody">
+   <tr>
+
+   </tr>
+  </tbody>
+</table>
+        </div>
+    </div>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="crud.js"></script>
+</body>
+</html>

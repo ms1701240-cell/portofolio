@@ -1,0 +1,15 @@
+body{
+    background:linear-gradient(rgb(37, 36, 36))
+}
+.pos{
+    margin-top: 40px;
+    padding: 2px;
+    
+}
+.total{
+    background-color: red;
+    border-radius: 20px;
+}
+/*.total::before{
+    content: 'Total:';
+}
